@@ -100,14 +100,14 @@ PreviewHandler.Sdk.Managed
 ## Install Preview Handler
 
 ```
-gacutil -i DemoPreviewHandler.dll
+gacutil -i DemoPreviewHandler.dll (optional gac registration)
 regasm /codebase DemoPreviewHandler.dll
 ```
 
 ## Uninstall Preview Handler
 ```
 regasm /unregister DemoPreviewHandler.dll
-gacutil -u DemoPreviewHandler
+gacutil -u DemoPreviewHandler (optional gac unregistration)
 ```
 
 _Note: You will have to install any dependencies your Preview Handler has_
