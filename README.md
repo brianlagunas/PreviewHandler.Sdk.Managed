@@ -8,7 +8,7 @@ PreviewHandler.Sdk.Managed
         public override void DoPreview<T>(T dataSource)
         {
             if (!(dataSource is IStream previewStream))
-                throw new ArgumentException($"{nameof(dataSource)} for {nameof(RevealPreviewHandler)} must be a stream but was a '{typeof(T)}'");
+                throw new ArgumentException($"{nameof(dataSource)} for {nameof(DemoPreviewHandlerControl)} must be a stream but was a '{typeof(T)}'");
 
             this.InvokeOnControlThread(() =>
             {
