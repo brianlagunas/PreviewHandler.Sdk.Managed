@@ -47,6 +47,7 @@ PreviewHandler.Sdk.Managed
     }
 
 ```
+_Note: GUIDs should be unique._
 
 ## Create Installer
 
@@ -110,4 +111,4 @@ regasm /unregister DemoPreviewHandler.dll
 gacutil -u DemoPreviewHandler (optional gac unregistration)
 ```
 
-_Note: You will have to install any dependencies your Preview Handler has_
+Note: For x64 systems make sure you use `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\regasm.exe`
