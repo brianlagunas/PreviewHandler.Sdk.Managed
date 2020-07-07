@@ -12,6 +12,8 @@
     <Description>A managed SDK for creating and installing Windows Preview Handlers for File Explorer and Outlook.</Description>
     <PackageTags>preview handler, outlook preview, file explorer, file explorer preview pane, windows</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongKeyFile.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
