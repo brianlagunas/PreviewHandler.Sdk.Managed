@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+name: Release Build
+on:
+  release:
+    branches:
+      -master
+ 
+jobs:
+  release:
+    name: Release to NuGet
+    runs-on: windows-latest
+    
+    steps:              
+      - name: Build, Pack, and Publish
+        uses: brandedoutcast/publish-nuget@v2.5.2
+        with:
+          # Filepath of the project to be packaged, relative to root of repository
+          PROJECT_FILE_PATH: src/PreviewHandler.Sdk.Managed/PreviewHandler.Sdk.Managed.csproj
+          # API key to authenticate with NuGet server
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+        
+    
