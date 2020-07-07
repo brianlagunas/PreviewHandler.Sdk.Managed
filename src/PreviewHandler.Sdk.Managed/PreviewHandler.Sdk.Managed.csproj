@@ -5,6 +5,11 @@
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>PreviewHandler.Sdk</RootNamespace>
     <Version>1.0.0</Version>
+    <Authors>Brian Lagunas</Authors>
+    <Company />
+    <RepositoryUrl>https://github.com/brianlagunas/PreviewHandler.Sdk.Managed</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>A managed SDK for creating and installing Windows Preview Handlers for File Explorer and Outlook.</Description>
   </PropertyGroup>
 
   <ItemGroup>
