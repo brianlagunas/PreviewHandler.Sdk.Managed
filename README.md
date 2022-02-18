@@ -18,6 +18,8 @@ PreviewHandler.Sdk.Managed
                 var tb = new TextBox() { Text = "Your UI Goes Here!" };
                 Controls.Add(tb);
             });
+            
+            base.DoPreview(dataSource); //sets this.Visible = true
         }
     }
 ```
